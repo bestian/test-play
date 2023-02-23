@@ -2,7 +2,10 @@
   "name": "test-play",
   "version": "0.0.0",
   "devDependencies": {
-    "wrangler": "2.11.0"
+    "rollup-plugin-node-polyfills": "^0.2.1",
+    "wrangler": "2.11.0",
+    "xhr2": "^0.2.1",
+    "xmlhttprequest": "^1.8.0"
   },
   "private": true,
   "scripts": {

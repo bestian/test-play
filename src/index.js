@@ -1,12 +1,12 @@
-
 /**
  * Created by ying.wu on 2017/6/27.
  */
 const ecpay_payment = require('ecpay_aio_nodejs')
 //參數值為[PLEASE MODIFY]者，請在每次測試時給予獨特值
 //若要測試非必帶參數請將base_param內註解的參數依需求取消註解 //
-let base_param = {
-  MerchantTradeNo: 'dyf6A3jf8bH0594837f2', //請帶20碼uid, ex: f0a0d7e9fae1bb72bc93
+
+var base_param = {
+  MerchantTradeNo: 'kojmf768594jfovjgim3', //請帶20碼uid, ex: f0a0d7e9fae1bb72bc93
   MerchantTradeDate: '2023/02/17 15:45:30', //ex: 2017/02/13 15:45:30
   TotalAmount: '100',
   TradeDesc: '測試交易描述',
@@ -53,10 +53,10 @@ let inv_params = {
   // InvType: '07'
 }
 const options = require('./conf/config-example')
-create = new ecpay_payment(options)
+var create = new ecpay_payment(options)
 console.log(create)
 
-htm = create.payment_client.aio_check_out_credit_onetime(parameters = base_param, invoice = inv_params)
+htm = create.payment_client.aio_check_out_credit_onetime(base_param, inv_params)
 console.log(htm)
 
 export default {
