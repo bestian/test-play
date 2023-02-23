@@ -1,0 +1,15 @@
+{
+  "name": "test-play",
+  "version": "0.0.0",
+  "devDependencies": {
+    "wrangler": "2.11.0"
+  },
+  "private": true,
+  "scripts": {
+    "start": "wrangler dev",
+    "deploy": "wrangler publish"
+  },
+  "dependencies": {
+    "ecpay_aio_nodejs": "^1.0.2"
+  }
+}

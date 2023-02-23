@@ -1,0 +1,8 @@
+name = "test-play"
+main = "src/index.js"
+compatibility_date = "2023-02-23"
+usage_model = "bundled"
+env = { }
+
+[triggers]
+crons = [ ]
